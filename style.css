@@ -1,0 +1,197 @@
+* {
+  /* font-family: "Playwrite DE Grund", cursive; */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  background-image: linear-gradient(
+    to right,
+    rgba(236, 242, 250, 0.685),
+    rgba(202, 219, 253, 0.667)
+  );
+}
+
+/* navbar-menu */
+.navbar-menu {
+  padding: 15px 20px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand {
+  color: #5b26ed;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: #5b26ed;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #774bf1;
+  transform: scale(1.1);
+}
+
+.navbar-brand:hover {
+  color: #5b26ed;
+}
+
+/* humburger-menu */
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #5b26ed;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+/* end-humburger-menu */
+/* navbar-menu */
+
+/* header */
+
+.header {
+  background: url("img/bckg-web-01.png") no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b26ed;
+  text-align: center;
+}
+
+.header .title-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header .header-subtitel {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* end-header */
+
+/* content-about */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-shadow {
+  filter: drop-shadow(-5px -5px 3px #fcd203ac);
+}
+
+.about-img {
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-caption {
+  max-width: 600px;
+}
+
+/* contenct service */
+.service-card {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* contenct-portfolio */
+.portfolio-content {
+  display: flex;
+  justify-content: center;
+}
+
+.img-card {
+  background-color: none;
+}
+
+.img-card img {
+  width: 100%;
+  margin-left: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-card > p {
+  display: none;
+}
+
+.img-card img:hover {
+  transform: scale(1.05);
+}
+
+/* contenct-footer */
+footer {
+  background-color: #f4faff;
+  padding: 10px;
+  text-align: center;
+  color: #5b26ed#fff;
+}
+
+.medsos-icon li {
+  list-style: none;
+}
+
+.medsos-icon a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #5b26ed;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.medsos-icon a:hover {
+  color: #00aced;
+}
